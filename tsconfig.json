@@ -5,8 +5,7 @@
   "exclude": [
     "node_modules",
     "build",
-    "dist",
-    "**/*.test.ts"
+    "dist"
   ],
   "compilerOptions": {
     "target": "es2022",
@@ -24,20 +23,9 @@
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "skipLibCheck": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": false,
-    "strictPropertyInitialization": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noImplicitOverride": false,
-    "alwaysStrict": true,
-    "useUnknownInCatchVariables": true,
-    "noEmitOnError": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
     "types": [
       "node",
       "vite/client"

@@ -10,14 +10,11 @@ import { defineConfig } from "vite";
     base: "/",
     plugins: [react(), tailwindcss()],
     resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "src"),
-      },
+      alias: { "@": path.resolve(__dirname, "src") },
       dedupe: ["react", "react-dom"],
     },
-    root: path.resolve(__dirname),
     build: {
-      outDir: path.resolve(__dirname, "dist/public"),
+      outDir: "dist",
       emptyOutDir: true,
     },
     server: {
