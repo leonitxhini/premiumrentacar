@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "For premium scroll animations and page transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes without style conflicts"
+
+images:
+  - path: "artifacts/premium-rentacar/public/images/hero-bg.png"
+    description: "Dark, moody automotive background showing the sleek silhouette of a luxury car in a dimly lit studio with subtle warm gold rim lighting. Extremely high end, dramatic shadows, lots of negative space."
+    aspect_ratio: "16:9"
+  - path: "artifacts/premium-rentacar/public/images/texture-bg.png"
+    description: "Abstract luxury texture in deep black and dark charcoal, resembling premium perforated leather or subtle carbon fiber with extremely faint, elegant gold dust speckles."
+    aspect_ratio: "16:9"
+
+notes:
+  - Frontend-only landing page. No API calls or backend integration.
+  - Hardcoded fleet and feature data based on provided specifications.
