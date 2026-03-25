@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Premium Rent a Car"
+version = "1.0.0"
+id = "artifacts/premium-rentacar"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23914
+
+[services.development]
+run = "pnpm --filter @workspace/premium-rentacar run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/premium-rentacar", "run", "build" ]
+publicDir = "artifacts/premium-rentacar/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23914"
+BASE_PATH = "/"
